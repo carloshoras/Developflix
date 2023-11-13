@@ -1,4 +1,5 @@
-/* styles.css */
+
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -15,4 +16,24 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* --- */
 
+.genero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  width: 146px;
+}
+
+.poster span {
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px red solid;
+
+}
