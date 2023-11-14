@@ -5,10 +5,7 @@ const generos = [28, 53, 12]
 
 function postMovie (genre, element) {
     if (genre == 28 || genre == 53 || genre == 12) {
-        const pelicula = document.createElement('div')
-        pelicula.setAttribute('class', 'poster')
-        pelicula.innerHTML = `<img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt="${element.title}" /><span>${element.title}</span>`
-        divGeneros[generos.indexOf(genre)].appendChild(pelicula)
+        divGeneros[generos.indexOf(genre)].innerHTML += `<div class="poster"><img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt="${element.title}" /><span>${element.title}</span></div>`
     }
 }
 
